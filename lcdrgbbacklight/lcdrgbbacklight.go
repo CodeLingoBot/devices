@@ -143,7 +143,7 @@ func (d *LCDRGBBacklight) Scroll(leftToRight bool) error {
 	return d.command([]byte{lcdCursorShift | lcdDisplayMove | lcdMoveRight})
 }
 
-// CustomChar sets one of the 8 CGRAM locations with a custom character.
+// SetCustomChar sets one of the 8 CGRAM locations with a custom character.
 // The custom character can be used by writing a byte of value 0 to 7.
 // When you are using LCD as 5x8 dots in function set then you can define a total of 8 user defined patterns
 // (1 Byte for each row and 8 rows for each pattern).

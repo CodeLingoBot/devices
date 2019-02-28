@@ -163,7 +163,7 @@ func (o *OLED) Draw() error {
 	return o.dev.Write(o.buf)
 }
 
-// StartScroll starts scrolling in the horizontal direction starting from
+// EnableScroll starts scrolling in the horizontal direction starting from
 // startY column to endY column.
 func (o *OLED) EnableScroll(startY, endY int) error {
 	panic("not implemented")
